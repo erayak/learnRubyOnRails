@@ -4,4 +4,9 @@ class BlogController < ApplicationController
   	render
   end
 
+  def detail
+  	id = params[:id]
+  	render locals:{ id: id }
+  end
+
 end

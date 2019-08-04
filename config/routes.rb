@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   
-  get '/' => 'home#index'
+	# Index
+	get '/' => 'home#index'
+	get '/aboutus' => 'home#aboutus'
 
-  get '/aboutus' => 'home#aboutus'
-
-  get '/blog' => 'blog#index'
+	# Blog
+	get '/blog' => 'blog#index'
+	get '/blog/detail/:id' => 'blog#detail'
 
 end
