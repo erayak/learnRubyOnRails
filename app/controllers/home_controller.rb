@@ -4,4 +4,8 @@ class HomeController < ApplicationController
   	render
   end
 
+  def aboutus
+  	render
+  end
+
 end
